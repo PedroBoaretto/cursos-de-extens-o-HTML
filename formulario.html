@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça Sua Inscrição</title>
+    <style>
+        div {
+            display: block;
+            margin-bottom: 10px;
+        }
+        legend{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="https://63056007dde73c0f8445a93b.mockapi.io/Usuario">
+
+        <fieldset style="background-color:rgb(125, 218, 133) ;">
+            <legend style="font-size: 20px;">Dados do Aluno</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome" required autofocus placeholder="">
+            </div>
+            <div>
+                <label>Data Nascimento:</label>
+                <input name="dtNasc" type="date" value="2022-08-15" min="1900-01-01" max="2022-08-16">
+            </div>
+            <div>
+                <label>Endereço:</label>
+                <input type="text" name="Endereço" style="width: 369px;">
+                <label>Bairro:</label>
+                <input type="text" name="Bairro">
+                <label>Numero:</label>
+                <input style="width: 40px;" type="decimal">
+            </div>
+            <div>
+                <label>Cep:</label>
+                <input type="text" style="width: 90px;">
+                <label>Cidade:</label>
+                <input name="Cidade" id="cidade" list="listaCdidade">
+                <datalist id="listaCidade">
+                    <option value="sorocaba">
+                    <option value="mairinque">
+                    <option value="sao roque">
+                </datalist>
+                <label>Complemento:</label>
+                <input type="text" style="width: 400px;">
+            </div>
+            <div>
+                <label>Estado:</label>
+                <input type="text" style="width: 25px;">
+            </div>
+            <div>
+                <label>Telefone:</label>
+                <input type="tel" style="width: 130px;">
+                <label>Celular:</label>
+                <input type="tel" style="width: 130px;">
+                <label>Email:</label>
+                <input type="email" style="width: 360px;">
+            </div>
+            <div>
+                <label>Cor:</label>
+                <input name="Cor" id="bra" type="checkbox" value="Branca">
+                <label for="branca">Branca</label>
+                <input name="Cor" id="pre" type="checkbox" value="Preta">
+                <label for="preta">Preta</label>
+                <input name="Cor" id="par" type="checkbox" value="Parda">
+                <label for="parda">Parda</label>
+                <input name="Cor" id="amar" type="checkbox" value="Parda">
+                <label for="amarela">Amarela</label>
+                <input name="Cor" id="indig" type="checkbox" value="Amarela">
+                <label for="indigena">Indigena</label>
+            </div>
+            <div>
+                <button type="submit">Salvar</button>
+                <button type="reset">Limpar Formulário</button>
+            </div>
+        </fieldset>
+
+
+        <fieldset style="background-color:rgb(125, 218, 182) ;">
+            <legend style="font-size: 20px;">Dados do Pai</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nomepai" required autofocus placeholder="">
+                <label>Data Nascimento:</label>
+                <input name="dtNascpai" type="date" value="2022-08-15" min="1900-01-01" max="2022-08-16">
+                <label>Naturalidade</label>
+                <input type="text" name="naturpai">
+            </div>
+            <div>
+                <label>Instrução:</label>
+                <select name="instrução">
+                    <option value="opt1">Analfabeto</option>
+                    <option value="opt2">Ensino Fundamental Completo</option>
+                    <option value="opt3">Ensino Médio Completo </option>
+                    <option value="opt4">Ensino Superior Completo </option>
+                </select>
+                <label>Profissão:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Celular:</label>
+                <input type="tel" style="width: 130px;">
+                <label>Email:</label>
+                <input type="email" style="width: 360px;">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpfpai" id="cpf">
+            </div>
+            <div>
+                <label>É Responsável Financeiro?:</label>
+                <input name="sim" id="sim" type="checkbox" value="Sim">
+                <label for="sim">Sim</label>
+                <input name="nao" id="nao" type="checkbox" value="Não">
+                <label for="nao">Não</label>
+            </div>
+        </fieldset>
+
+
+        <fieldset style="background-color:rgb(125, 192, 218) ;">
+            <legend style="font-size: 20px;">Dados da Mãe</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nomemae" required autofocus placeholder="">
+                <label>Data Nascimento:</label>
+                <input name="dtNascmae" type="date" value="2022-08-15" min="1900-01-01" max="2022-08-16">
+                <label>Naturalidade</label>
+                <input type="text" name="naturmae">
+            </div>
+            <div>
+                <label>Instrução:</label>
+                <select name="instrução">
+                    <option value="opt1">Analfabeto</option>
+                    <option value="opt2">Ensino Fundamental Completo</option>
+                    <option value="opt3">Ensino Médio Completo </option>
+                    <option value="opt4">Ensino Superior Completo </option>
+                </select>
+                <label>Profissão:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Celular:</label>
+                <input type="tel" style="width: 130px;">
+                <label>Email:</label>
+                <input type="email" style="width: 360px;">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpfmae" id="cpf">
+            </div>
+            <div>
+                <label>É Responsável Financeiro?:</label>
+                <input name="sim" id="sim" type="checkbox" value="Sim">
+                <label for="sim">Sim</label>
+                <input name="nao" id="nao" type="checkbox" value="Não">
+                <label for="nao">Não</label>
+            </div>
+        </fieldset>
+
+        <fieldset style="background-color:rgb(125, 150, 218) ;">
+            <legend style="font-size: 20px;">Dados do Curso</legend>
+            <div>
+                <label>Nome do Curso:</label>
+                <input type="text" name="nomecurso" required autofocus placeholder="">
+                <label>Data Nascimento:</label>
+                <input name="dtNasc" type="date" value="2022-08-15" min="1900-01-01" max="2022-08-16">
+                <label>Naturalidade</label>
+                <input type="text" name="nat">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
